@@ -9,7 +9,6 @@ public class EnemyIA : MonoBehaviour
     private Transform target;
     private int wavepointIndex = 0;
 
-
     void Start()
     {
         target = Waypoints.points[0];
@@ -37,4 +36,5 @@ public class EnemyIA : MonoBehaviour
         wavepointIndex++; 
         target = Waypoints.points[wavepointIndex];
     }
+    
 }
