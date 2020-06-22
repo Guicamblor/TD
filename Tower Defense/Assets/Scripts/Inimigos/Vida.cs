@@ -24,12 +24,8 @@ public class Vida : MonoBehaviour
 
             healthBar.SetHealth(vida);
         }
-        /*if(vida <= 0)
-        {
-            SceneManager.LoadScene(cena); //volta pro Menu
-        }
-        */
     }
+
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Enemy")

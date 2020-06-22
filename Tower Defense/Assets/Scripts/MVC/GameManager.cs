@@ -3,19 +3,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private Action _gameOverViewUpdate;
+    public Action _gameOverViewUpdate;
 
-    //public (nome do script de vida) vida;
+    private Vida vida;
+    public GameObject end;
 
     void Update()
     {
+        vida = end.GetComponent<Vida>();
 
-        /*if (vida <= 0)
+        if (vida.vida <= 0)
         {
             _gameOverViewUpdate?.Invoke();
             Destroy(gameObject);
         }
-        */
     }
 
     public void Setup(Action gameOverViewUpdate)
